@@ -2,7 +2,7 @@ body{
     margin:auto;
     background-color: bisque;
 }
-menu{
+nav{
     background-color: white;
     margin-bottom: 40px;
     margin-top: 0px;
@@ -11,7 +11,7 @@ menu{
     top:0;
 }
 
-menu li{
+nav ul li{
     list-style-type: none;
     display:inline;
     padding: 20px;
@@ -26,7 +26,7 @@ h2{
 h3{
     font-size: x-large;
 }
-ul{
+main ul{
     margin-left:600px;
     font-size:20px;
 }

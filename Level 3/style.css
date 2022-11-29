@@ -7,6 +7,8 @@ body{
 }
 .image {
     text-align: center;
+    position:relative;
+    color: white;
 }
 div img{
     width:100%;
@@ -15,18 +17,29 @@ div img{
     object-fit: cover;
     margin-bottom: 20px;
 }
-ul{
+.title{
+    position: absolute;
+    top: 12px;
+    left: 100px;
+}
+nav{
+    /* justify-content: center; */
     padding-top:30px;
     padding-bottom: 30px;
-    list-style-type: none;
     background-color: rgb(36, 75, 131) ;
 }
-ul li{
+nav a{
     display:inline;
-    margin:20px;
+    /* flex-wrap: nowrap; */
+    margin:auto;
     padding-right:40px;
-    padding-left: 40px;;
-    border: 0.5px solid white;
+    padding-left: 50px;
+   
+    text-decoration: none;
+    color:white;
+}
+nav a:not(:first-child){
+    border-left: solid 1px white; 
 }
 
 main li{
@@ -50,7 +63,7 @@ footer p{
 #borderright{
     border-right:1px solid white;
 }
-section{
+.second section{
     margin-left:20px;
 }
 p{
@@ -59,3 +72,32 @@ p{
 button{
    padding:10px;
 }
+
+form{
+    display:flex;
+    flex-direction: column;
+    width:200px;
+    background-color:rgb(36, 75, 131) ;
+    padding: 20px;
+    padding-top: 0px;
+    text-align: center;
+}
+label textarea{
+    vertical-align: middle;
+}
+
+/* input{
+    margin-bottom: 20px;
+    height:30px;
+} */
+
+input[type="radio"], label{
+    vertical-align: baseline;
+    margin-top:20px;
+}
+
+input{
+    margin-bottom:20px;
+}
+
+
